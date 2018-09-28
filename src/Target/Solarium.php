@@ -5,11 +5,10 @@ declare(strict_types=1);
 namespace RulerZ\Solarium\Target;
 
 use RulerZ\Executor\Polyfill\FilterBasedSatisfaction;
-use RulerZ\Solarium\Executor\SolariumFilterTrait;
+use RulerZ\Solarium\Executor\FilterTrait;
 use RulerZ\Target\AbstractCompilationTarget;
 use RulerZ\Target\Operators\Definitions;
 use Solarium\Client as SolariumClient;
-
 use RulerZ\Compiler\Context;
 
 class Solarium extends AbstractCompilationTarget
@@ -36,7 +35,7 @@ class Solarium extends AbstractCompilationTarget
     protected function getExecutorTraits()
     {
         return [
-            SolariumFilterTrait::class,
+            FilterTrait::class,
             FilterBasedSatisfaction::class,
         ];
     }

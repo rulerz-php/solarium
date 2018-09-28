@@ -6,7 +6,7 @@ namespace RulerZ\Solarium\Executor;
 
 use RulerZ\Context\ExecutionContext;
 
-trait SolariumFilterTrait
+trait FilterTrait
 {
     abstract protected function execute($target, array $operators, array $parameters);
 
