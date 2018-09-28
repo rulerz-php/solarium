@@ -21,13 +21,13 @@ matrix:
     fast_finish: true
 
 before_install:
+    - make solr_start
     - phpenv config-rm xdebug.ini || true
 
 install:
     - composer install --optimize-autoloader --no-interaction --prefer-source
 
 script:
-    - make solr_start
     - make database
     - make tests
     - make rusty
