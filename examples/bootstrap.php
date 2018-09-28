@@ -19,7 +19,6 @@ $client = new Solarium\Client([
     ],
 ]);
 
-
 // compiler
 $compiler = new \RulerZ\Compiler\Compiler(new \RulerZ\Compiler\EvalEvaluator());
 

@@ -32,7 +32,6 @@ trait SolariumFilterTrait
     public function filter($target, array $parameters, array $operators, ExecutionContext $context)
     {
         /** @var \Solarium\Client $target */
-
         $query = $this->applyFilter($target, $parameters, $operators, $context);
 
         return $target->select($query)->getIterator();
