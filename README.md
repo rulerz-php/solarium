@@ -13,11 +13,11 @@ RulerZ.
 
 Here is a summary of what you will have to do:
 
- * [configure solarium/solarium](#configure-solarium-solarium);
+ * [configure solarium](#configure-solarium);
  * [configure RulerZ](#configure-rulerz);
  * [filter your target](#filter-your-target).
 
-## Configure solarium/solarium
+## Configure solarium
 
 This subject won't be directly treated here. You can either follow the [official
 documentation](https://solarium.readthedocs.io/en/stable/)
